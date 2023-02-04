@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animusic</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mideaqueries.css">
+</head>
+
+<body>
+    <!-- NAVBAR SECTION START-->
+    <nav>
+        <ul>
+            <li class="logo"><img src="images/logo.png" alt="logo"></li>
+            <li> <a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Playlist</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <!-- NAVBAR SECTION END-->
+
+
+    <!-- CONTAINER START -->
+    <div class="container contain">
+
+        <!-- SPAN FOR ANIMATION -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!-- SONGS CONTAINER -->
+        <div class="songsContainer">
+            <!-- SONG LIST  -->
+            <div class="songList">
+                <h1 class="animation-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Anime Songs</h1>
+                <!-- SONG 1 -->
+                <div class="song">
+                    <img src="covers/1.jpg" alt="" class="songsCircleImage">
+                    <p class="name">Gurenge - Lisa | Demon Slayer</p>
+                    <div class="duration">1:44 <i id="0" class="playBtn fa-regular fa-circle-play"></i> </div>
+                </div>
+                <!-- SONG 2 -->
+                <div class="song">
+                    <img src="covers/2.jpg" alt="" class="songsCircleImage">
+                    <p class="name">Unlasting - Lisa | Sword Art Online</p>
+                    <div class="duration">4:55 <i id="1" class="playBtn fa-regular fa-circle-play"></i> </div>
+                </div>
+                <!-- SONG 3 -->
+                <div class="song">
+                    <img src="covers/3.jpg" alt="" class="songsCircleImage">
+                    <p class="name">Shock - Mari | Attack On Titan</p>
+                    <div class="duration">1:28 <i id="2" class="playBtn fa-regular fa-circle-play"></i> </div>
+                </div>
+                <!-- SONG 4 -->
+                <div class="song">
+                    <img src="covers/4.jpg" alt="" class="songsCircleImage">
+                    <p class="name">Inferno - Mrs.Green | Fire Force</p>
+                    <div class="duration">1:29 <i id="3" class="playBtn fa-regular fa-circle-play"></i> </div>
+                </div>
+                <!-- SONG 5 -->
+                <div class="song">
+                    <img src="covers/5.jpg" alt="" class="songsCircleImage">
+                    <p class="name">A Child of Evil - Ai | Attack On Titan</p>
+                    <div class="duration">1:30 <i id="4" class="playBtn fa-regular fa-circle-play"></i> </div>
+                </div>
+                <!-- SONG 6 -->
+                <div class="song">
+                    <img src="covers/6.jpg" alt="" class="songsCircleImage">
+                    <p class="name"> Tanjiro No Uta - Akano | Demon Slayer</p>
+                    <div class="duration">4:31 <i id="5" class="playBtn fa-regular fa-circle-play"></i> </div>
+                </div>
+                <!-- SONG 7 -->
+                <div class="song">
+                    <img src="covers/7.jpg" alt="" class="songsCircleImage">
+                    <p class="name">Rumbling - SiM | Attack On Titan</p>
+                    <div class="duration">0:54<i id="6" class="playBtn fa-regular fa-circle-play"></i> </div>
+                </div>
+                <!-- SONG 8 -->
+                <div class="song">
+                    <img src="covers/8.jpg" alt="" class="songsCircleImage">
+                    <p class="name">Unravel - Toru | Tokyo Ghoul</p>
+                    <div class="duration">3:48 <i id="7" class="playBtn fa-regular fa-circle-play"></i> </div>
+                </div>
+                <!-- SONG 9 -->
+                <div class="song">
+                    <img src="covers/9.jpg" alt="" class="songsCircleImage">
+                    <p class="name"> Black Catcher - Vickeblanka | Black Clover</p>
+                    <div class="duration">1:43 <i id="8" class="playBtn fa-regular fa-circle-play"></i> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTAINER END -->
+
+
+    <!-- CONTROLS SECTION START -->
+    <div class="controls">
+        <input type="range" name="range" id="myProgressBar" value="0" min="0" max="100">
+
+        <div class="control-box">
+            <div class="gif-and-name">
+                <div class="gif" id="musicBar">
+                    <img src="images/playing26.gif" alt="">
+                </div>
+                <div id="playingSongName">
+                    Gurenge-Lisa | Demon Slayer
+                </div>
+            </div>
+            <div class="icons">
+                <i class="listPlayBtn fa-solid fa-2x fa-backward-step" id="previous"></i>
+                <i class="listPlayBtn fa-regular fa-2x fa-circle-play" id="masterPlay"></i>
+                <i class="listPlayBtn fa-solid fa-2x fa-forward-step" id="next"></i>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- CONTROLS SECTION END -->
+
+
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/f3659f0b7b.js" crossorigin="anonymous"></script>
+    <!-- SCRIPT -->
+</body>
+
+</html>

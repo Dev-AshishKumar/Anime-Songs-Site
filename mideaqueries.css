@@ -1,0 +1,101 @@
+/* NAV BAR MEDIA QUERIES  START*/
+@media (max-width:500px) {
+    nav li {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:400px) {
+    nav li {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:350px) {
+    nav li {
+        font-size: 0.7rem;
+    }
+}
+
+/* NAV BAR MEDIA QUERIES END */
+
+
+/* Container Media Queries Start*/
+
+@media (max-width:630px) {
+
+    .container {
+        background-image: url(images/bg2.jpg);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name,
+    .duration {
+        font-size: 0.7rem;
+    }
+
+    .songsCircleImage {
+        width: 1.4rem;
+    }
+}
+
+@media (max-width:478px) {
+    .container h1 {
+        font-size: 1.2rem;
+    }
+
+    .name,
+    .duration {
+        font-size: 0.4rem;
+        gap: 6px;
+    }
+
+    .song {
+        gap: 5px;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .songList {
+        gap: 10px;
+    }
+
+    .songsCircleImage {
+        width: 1rem;
+    }
+}
+
+/* Container Media Queries End*/
+
+@media (max-width:550px) {
+    .control-box {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .gif-and-name {
+        gap: 3px;
+    }
+
+    #playingSongName {
+        font-size: 0.8rem;
+    }
+
+    .icons {
+        font-size: 0.6rem;
+    }
+
+
+
+
+
+}
+
+
+/* Control Media Queries Start*/
+
+
+
+
+/* Control Media Queries End*/

@@ -1,0 +1,358 @@
+/* FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Quicksand:wght@300;400&display=swap');
+/* font-family: 'PT Sans Narrow', sans-serif; */
+/* font-family: 'Quicksand', sans-serif; */
+
+
+* {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    /* font-family: 'Quicksand', sans-serif; */
+
+}
+
+/* CUSTOM CSS START*/
+:root {
+    /* FONTS SIZE*/
+    --normal-size: 1.6rem;
+
+    /* COLORS */
+    --body-color: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+    --song-list-color: linear-gradient(110.1deg, rgba(30, 2, 83, 1) 44.2%, rgba(198, 55, 160, 1) 138.2%);
+    /* --line-color: #64a2d1; */
+    --line-color: rgb(110, 9, 225);
+    --line-color-2: rgb(123, 29, 160);
+}
+
+/* CUSTOM CSS END */
+body {
+    background: var(--body-color);
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* NAVBAR SECTION START*/
+nav {
+    /* width: 100%; */
+    background-color: black;
+}
+
+nav ul {
+    gap: 1rem;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.logo {
+    margin-left: 1rem;
+    width: 3rem;
+}
+
+nav li {
+    font-size: var(--normal-size);
+}
+
+nav a {
+    border: transparent solid 2px;
+    padding: 0.1rem 0.5rem;
+}
+
+nav a:hover {
+    border-bottom: #ec38bc solid 1px;
+    border-top: #ec38bc solid 1px;
+    color: #ec38bc;
+}
+
+/* NAVBAR SECTION END*/
+
+
+
+
+/* CONTAINER START  */
+.container {
+    width: 80vw;
+    overflow: hidden;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    padding: 1.4rem 1rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/bg1.jpg);
+}
+
+
+.songsContainer {
+    width: fit-content;
+}
+.gif-and-name{
+    display: flex;
+    align-items: center;
+}
+.songsContainer h1 {
+    align-self: center;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    background: var(--song-list-color);
+}
+
+.songList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.song {
+    display: flex;
+    gap: 1rem;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0.2rem 1rem;
+    justify-content: space-between;
+    background-image: var(--song-list-color);
+}
+
+.duration {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.song i {
+    cursor: pointer;
+}
+
+.songsCircleImage {
+    width: 2rem;
+    border-radius: 34px;
+}
+
+/* CONTAINER END  */
+
+
+
+/* CONTROLS START */
+.controls {
+    display: flex;
+    bottom: 0;
+    gap: 0.5rem;
+    padding: 0.4rem;
+    position: sticky;
+    height: fit-content;
+    flex-direction: column;
+    background-color: black;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+    align-self: center;
+}
+
+.controls i {
+    cursor: pointer;
+}
+
+.control-box {
+    gap: 3rem;
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif {
+    width: 3rem;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+/* CONTROLS END */
+
+
+
+
+/* ANIMATION  */
+.contain {
+    position: relative;
+    overflow: hidden;
+}
+
+.contain span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, transparent, var(--line-color));
+    animation: animate_one 2s linear infinite;
+}
+
+@keyframes animate_one {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    100% {
+        transform: translateX(100%)
+    }
+}
+
+.contain span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, var(--line-color));
+    animation: animate_two 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate_two {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    100% {
+        transform: translateY(100%)
+    }
+}
+
+.contain span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to left, transparent, var(--line-color));
+    animation: animate_three 2s linear infinite;
+}
+
+@keyframes animate_three {
+    0% {
+        transform: translateX(100%)
+    }
+
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+.contain span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, var(--line-color));
+    animation: animate_four 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate_four {
+    0% {
+        transform: translateY(100%)
+    }
+
+    100% {
+        transform: translateY(-100%)
+    }
+}
+
+
+
+/* TWO */
+.animation-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.animation-box span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, transparent, var(--line-color-2));
+    animation: animate_one 2s linear infinite;
+}
+
+@keyframes animate_one {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    100% {
+        transform: translateX(100%)
+    }
+}
+
+.animation-box span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, var(--line-color-2));
+    animation: animate_two 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate_two {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    100% {
+        transform: translateY(100%)
+    }
+}
+
+.animation-box span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to left, transparent, var(--line-color-2));
+    animation: animate_three 2s linear infinite;
+}
+
+@keyframes animate_three {
+    0% {
+        transform: translateX(100%)
+    }
+
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+.animation-box span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, var(--line-color-2));
+    animation: animate_four 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate_four {
+    0% {
+        transform: translateY(100%)
+    }
+
+    100% {
+        transform: translateY(-100%)
+    }
+}
